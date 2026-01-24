@@ -31,3 +31,8 @@ incremental = false
 lto = "thin"
 opt-level = "s"
 panic = "abort"
+
+# Disable tests for no_std
+[profile.test]
+
+[profile.bench]
