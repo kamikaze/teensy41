@@ -1,0 +1,13 @@
+[build]
+target = "thumbv7em-none-eabihf"
+
+[target.thumbv7em-none-eabihf]
+rustflags = [
+    "-C", "link-arg=-Tt4link.x",
+    "-C", "link-arg=-Tdefmt.x",
+]
+
+runner = ["cargo", "run", "--package",  "tools", "--bin", "teensy4-runner", "--"]
+
+[env]
+DEFMT_LOG = "info"
