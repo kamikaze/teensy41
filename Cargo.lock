@@ -483,20 +483,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "teensy4"
-version = "0.1.0"
-dependencies = [
- "cortex-m",
- "cortex-m-rt",
- "defmt",
- "defmt-rtt",
- "rtic",
- "teensy4-bsp",
- "teensy4-fcb",
- "teensy4-panic",
-]
-
-[[package]]
 name = "teensy4-bsp"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -532,6 +518,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "631a1f5431b534b083974457a0383875575e483710247e65bc0c508ea3a1d59f"
 dependencies = [
  "imxrt-iomuxc",
+]
+
+[[package]]
+name = "teensy41"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "defmt",
+ "defmt-rtt",
+ "rtic",
+ "teensy4-bsp",
+ "teensy4-fcb",
+ "teensy4-panic",
 ]
 
 [[package]]

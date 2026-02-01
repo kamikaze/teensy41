@@ -1,5 +1,5 @@
 [package]
-name = "teensy4"
+name = "teensy41"
 version = "0.1.0"
 edition = "2024"
 resolver = "2"
